@@ -1,0 +1,31 @@
+
+<!-- A form sample for the country and state dropdown  -->
+    <form action="/register" id="regForm" class="form-horizontal" method="POST">
+          <div class="row mt-30 mb-30">
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <!-- select input for country -->
+                    <div class="col-md-12">
+                        <label class="control-label">Residential Country <span class="text-danger">*</span></label>
+                        <select class="form-control" name="country" id="country" required></select>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <!-- select input for country -->
+                    <div class="col-md-12">
+                        <label class="control-label">State of Origin <span class="text-danger">*</span></label>
+                        <select class="form-control" name="state" id="state" required></select>
+                    </div>
+                    </div>
+                </div>
+          </div>
+    </form>
+
+<!-- Countries and State script -->
+  <script type="text/javascript" src="/js/countries.js"></script>
+  
+  <script language="javascript">
+    populateCountries("country", "state"); // first parameter is the id of the country drop-down and second parameter is the id of the state drop-down
+  </script>
